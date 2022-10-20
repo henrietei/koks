@@ -10,7 +10,8 @@ class Rekins:
     garums=None
     augstums=None
     materiala_cena=None
-    produkta_cena=100
+    produkta_cena=None
+    #rekina_summa=None
 
     def __init__(self, name=None, text=None, platums=None, garums=None, augstums=None, materiala_cena=None):
         self.name=input('vards')
@@ -22,17 +23,18 @@ class Rekins:
         self.izdrukat()
 
 
-    #def aprekins(self, produkta_cena=100):
-        #darba_samaksa=15
-        #pvn=21
-        #produkta_cena=(len(self.text))*1.2+(self.platums/100*self.garums/100*self.augstums/100)/3*self.materiala_cena
-        #pvn_summa=(produkta_cena+darba_samaksa)*(pvn/100)
-        #rekina_summa=(produkta_cena+darba_samaksa)*pvn_summa
+    def aprekins(self):
+        self.darba_samaksa=15
+        self.pvn=21
+        self.produkta_cena=(len(self.text))*1.2+((self.platums/100)*(self.garums/100)*(self.augstums/100))/3*self.materiala_cena
+        #self.pvn_summa=(self.produkta_cena+self.darba_samaksa)*(self.pvn/100)
+        #self.rekina_summa=(self.produkta_cena+self.darba_samaksa)*self.pvn_summa
         
         
 
     def izdrukat(self):
-        print (f'vārds: {self.name}\nteksts: {self.text}\nplatums,garums,augstums: {self.platums},{self.garums},{self.augstums}\nmateriala cena eur/m2: {self.materiala_cena}\nprodukta cena: {self.produkta_cena}')
+        #self.produkta_cena=(len(self.text))*1.2+(self.platums/100*self.garums/100*self.augstums/100)/3*self.materiala_cena
+        print (f'vārds: {self.name}\nteksts: {self.text}\nplatums,garums,augstums: {self.platums},{self.garums},{self.augstums}\nmateriala cena eur/m2: {self.materiala_cena}\nprodukta cena: {self.produkta.cena}')
 
 print("laiks=", dt_string)	
 
