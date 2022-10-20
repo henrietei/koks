@@ -10,7 +10,7 @@ class Rekins:
     garums=None
     augstums=None
     materiala_cena=None
-    produkta_cena=None
+    produkta_cena=100
 
     def __init__(self, name=None, text=None, platums=None, garums=None, augstums=None, materiala_cena=None):
         self.name=input('vards')
@@ -22,10 +22,10 @@ class Rekins:
         self.izdrukat()
 
 
-    def aprekins(self, produkta_cena=None):
+    #def aprekins(self, produkta_cena=100):
         #darba_samaksa=15
         #pvn=21
-        produkta_cena=(len(self.text))*1.2+(self.platums/100*self.garums/100*self.augstums/100)/3*self.materiala_cena
+        #produkta_cena=(len(self.text))*1.2+(self.platums/100*self.garums/100*self.augstums/100)/3*self.materiala_cena
         #pvn_summa=(produkta_cena+darba_samaksa)*(pvn/100)
         #rekina_summa=(produkta_cena+darba_samaksa)*pvn_summa
         
